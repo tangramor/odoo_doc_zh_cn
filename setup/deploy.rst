@@ -41,7 +41,7 @@ Configuration sample
 
 in ``/etc/odoo.conf`` set:
 
-.. code-block:: apacheconf
+.. code-block:: none
 
   [options]
   dbfilter = ^mycompany.*$
@@ -50,7 +50,7 @@ in ``/etc/odoo.conf`` set:
 
 in ``/etc/odoo.conf`` set:
 
-.. code-block:: apacheconf
+.. code-block:: none
 
   [options]
   dbfilter = %d
@@ -82,7 +82,7 @@ Configuration sample
 
 in ``/etc/postgresql/9.5/main/pg_hba.conf`` set:
 
-.. code-block:: apacheconf
+.. code-block:: none
 
   # IPv4 local connections:
   host    all             all             127.0.0.1/32            md5
@@ -90,7 +90,7 @@ in ``/etc/postgresql/9.5/main/pg_hba.conf`` set:
 
 in ``/etc/postgresql/9.5/main/postgresql.conf`` set:
   
-.. code-block:: apacheconf
+.. code-block:: none
   
   listen_addresses = 'localhost,192.168.1.2'
   port = 5432
@@ -135,7 +135,7 @@ Configuration sample
 
 in ``/etc/odoo.conf`` set:
 
-.. code-block:: apacheconf
+.. code-block:: none
 
   [options]
   admin_passwd = mysupersecretpassword
@@ -205,7 +205,7 @@ Configuration sample
 
 in ``/etc/odoo.conf``:
 
-.. code-block:: apacheconf
+.. code-block:: none
 
   [options]
   limit_memory_hard = 1677721600
@@ -228,8 +228,7 @@ just about any SSL termination proxy, but requires the following setup:
 * enable Odoo's :option:`proxy mode <odoo-bin --proxy-mode>`. This should only be enabled when Odoo is behind a reverse proxy
 * set up the SSL termination proxy (`Nginx termination example`_)
 * set up the proxying itself (`Nginx proxying example`_)
-* your SSL termination proxy should also automatically redirect non-secure
-connections to the secure port
+* your SSL termination proxy should also automatically redirect non-secure connections to the secure port
 
 .. warning::
 
@@ -245,13 +244,13 @@ Configuration sample
 
 in ``/etc/odoo.conf`` set:
 
-.. code-block:: apacheconf
+.. code-block:: none
 
   proxy_mode = True
 
 in ``/etc/nginx/sites-enabled/odoo.conf`` set:
 
-.. code-block:: apacheconf
+.. code-block:: none
 
   #odoo server
   upstream odoo {
@@ -429,15 +428,11 @@ of the supported browsers by Odoo version is the following:
 
 .. _regular expression: https://docs.python.org/2/library/re.html
 .. _ARP spoofing: http://en.wikipedia.org/wiki/ARP_spoofing
-.. _Nginx termination example:
-    http://nginx.com/resources/admin-guide/nginx-ssl-termination/
-.. _Nginx proxying example:
-    http://nginx.com/resources/admin-guide/reverse-proxy/
+.. _Nginx termination example: http://nginx.com/resources/admin-guide/nginx-ssl-termination/
+.. _Nginx proxying example: http://nginx.com/resources/admin-guide/reverse-proxy/
 .. _socat: http://www.dest-unreach.org/socat/
 .. _PostgreSQL connection settings:
-.. _listen to network interfaces:
-    http://www.postgresql.org/docs/9.3/static/runtime-config-connection.html
-.. _use an SSH tunnel:
-    http://www.postgresql.org/docs/9.3/static/ssh-tunnels.html
+.. _listen to network interfaces: http://www.postgresql.org/docs/9.3/static/runtime-config-connection.html
+.. _use an SSH tunnel: http://www.postgresql.org/docs/9.3/static/ssh-tunnels.html
 .. _WSGI: http://wsgi.readthedocs.org/
 .. _POSBox: https://www.odoo.com/page/point-of-sale-hardware#part_2

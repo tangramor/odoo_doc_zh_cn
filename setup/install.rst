@@ -432,7 +432,7 @@ Source installation requires manually installing dependencies:
     command from a cmd.exe prompt (replace ``\YourOdooPath`` by the actual
     path where you downloaded Odoo):
 
-    .. code-block:: ps1
+    .. code-block:: none
 
         C:\> cd \YourOdooPath
         C:\YourOdooPath> C:\Python27\Scripts\pip.exe install -r requirements.txt
@@ -477,7 +477,7 @@ Source installation requires manually installing dependencies:
   - on Windows, `install nodejs <http://nodejs.org/download/>`_, reboot (to
     update the :envvar:`PATH`) and install less:
 
-    .. code-block:: ps1
+    .. code-block:: none
 
         C:\> npm install -g less
 
@@ -510,7 +510,7 @@ Common necessary configurations are:
 
 Under Windows a typical way to execute odoo would be:
 
-.. code-block:: ps1
+.. code-block:: none
 
     C:\YourOdooPath> python odoo-bin -w odoo -r odoo --addons-path=addons,../mymodules --db-filter=mydb$
 
@@ -533,10 +533,8 @@ default db to serve on localhost:8069
 .. _EPEL: https://fedoraproject.org/wiki/EPEL
 .. _PostgreSQL: http://www.postgresql.org
 .. _the official installer:
-.. _install pip:
-    https://pip.pypa.io/en/latest/installing.html#install-pip
-.. _PostgreSQL for windows:
-    http://www.enterprisedb.com/products-services-training/pgdownload
+.. _install pip: https://pip.pypa.io/en/latest/installing.html#install-pip
+.. _PostgreSQL for windows: http://www.enterprisedb.com/products-services-training/pgdownload
 .. _Quilt: http://en.wikipedia.org/wiki/Quilt_(software)
 .. _saas: https://www.odoo.com/page/start
 .. _the wkhtmltopdf download page: http://wkhtmltopdf.org/downloads.html
@@ -545,8 +543,7 @@ default db to serve on localhost:8069
 .. _pip: https://pip.pypa.io
 .. _macports: https://www.macports.org
 .. _homebrew: http://brew.sh
-.. _Visual C++ Compiler for Python 2.7:
-    http://www.microsoft.com/en-us/download/details.aspx?id=44266
+.. _Visual C++ Compiler for Python 2.7: http://www.microsoft.com/en-us/download/details.aspx?id=44266
 .. _wheels: https://wheel.readthedocs.org/en/latest/
 .. _virtual environment: http://docs.python-guide.org/en/latest/dev/virtualenvs/
 .. _pywin32: http://sourceforge.net/projects/pywin32/files/pywin32/
